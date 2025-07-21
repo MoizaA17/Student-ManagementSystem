@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Moizah Hazarvi",
+        "id": "12",
+        "age": "20",
+        "contact": "03045262229",
+        "courses": [
+            {
+                "course_name": "dsa",
+                "course_code": "123",
+                "instructor": "asma",
+                "credit_hours": "4"
+            }
+        ]
+    }
+]
