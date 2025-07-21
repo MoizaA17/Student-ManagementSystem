@@ -39,30 +39,55 @@ class Student:
         answer = input("What do you want to update (name/age/contact): ").lower().strip()
 
         if(answer == "name"):
-            new_name = input("Enter Updated Name: ").strip()
-            self.name = new_name
-            print("\nName updated successfully.")
-
+            while True:
+                new_name = input("Enter Students's Updated Name: ")
+                if not new_name:
+                    print("Name cannot be empty.")
+                else:
+                    self.name = new_name
+                    print("Name updated successfully.")
+                    break
 
         elif(answer == "age"):
 
-            try: 
-                new_age = int(input("Enter Updated Age: ").strip())
-                self.age = new_age
-                print("\nAge updated successfully.")
+            while True:
+                age_input = input("Enter Students's Updated Age: ").strip()
+                if not age_input:
+                    print("Age cannot be empty")
+                    continue
 
-            except:
-                print("Enter valid age.")
+                if not age_input.isdigit():
+                    print("Enter a valid age.")
+                    continue
+
+                new_age = int(age_input)
+                if (new_age<10) or (new_age>100):
+                    print("Enter a valid age")
+                    continue
+
+                self.age = new_age
+                print("Age updated successfully.")
+                break
 
         elif(answer == "contact"):
-            try:
-                new_contact = int(input("Enter updated Contact number (without dashes): "))
-                if(len(new_contact) == 11):
-                    self.contact = new_contact
-                    print("\nContact updated successfully.")
+                while True:
+                    contact_input = input("Enter Students's Updated Contact: ").strip()
+                    if not contact_input:
+                        print("Contact cannot be empty")
+                        continue
 
-            except:
-                print("Enter valid contact.")
+                    if not contact_input.isdigit():
+                        print("Enter a valid age.")
+                        continue
+
+                    new_contact = contact_input
+                    if(len(new_contact) == 11):
+                        int(new_contact)
+                        self.contact = new_contact
+                        print("\nContact updated successfully.")
+                        break
+
+            
 
         else:
             print("Enter valid option.")

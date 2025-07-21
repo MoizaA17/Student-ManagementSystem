@@ -39,7 +39,30 @@ This project helped me dive deep into **Object-Oriented Programming**, **file ha
 
 ## 🧪 Demo Snapshots
 
-(Add screenshots below this section using `![alt text](image-path)` once pushed)
+### Main Menu and Adding a new Student
+![Demo: Main Menu and Adding a Task](assets/newstudent.png)
+*A quick look at the interactive menu and adding a new student.*
+
+
+### Displaying all students
+![Demo: Displaying all students](assets/displaystudents.png)
+*DisplayinG all students in a proper format.*
+
+### Search specific student using ID
+![Demo: Searching student using student ID](assets/searchstudent.png)
+*Searching student using Student ID and displaying that student info.*
+
+### Updating student info using ID
+![Demo: Updating student info ](assets/updatestudents.png)
+*Updating student info (name/age/contact) using Student ID*
+
+### Course Enrollment
+![Demo: Enrolling student in a course](assets/courseenroll.png)
+*Enrolling student in a course.*
+
+### Saving all updaed  data and exiting the program
+![Demo: Saving updated students ](assets/saveeAndExit.png.png)
+*Saving modified/updated list of students into students.json*
 
 ---
 

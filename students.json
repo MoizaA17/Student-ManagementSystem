@@ -1,14 +1,14 @@
 [
     {
-        "name": "Moizah Hazarvi",
-        "id": "12",
-        "age": "20",
-        "contact": "03045262229",
+        "name": "Moizah Kafayat",
+        "id": "802",
+        "age": 20,
+        "contact": "03045256783",
         "courses": [
             {
-                "course_name": "dsa",
-                "course_code": "123",
-                "instructor": "asma",
+                "course_name": "python",
+                "course_code": "145",
+                "instructor": "self",
                 "credit_hours": "4"
             }
         ]

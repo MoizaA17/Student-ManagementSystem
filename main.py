@@ -4,7 +4,14 @@ import os
 import json
 
 def student_exists(students_list):
-    id = input("Enter student's ID: ")
+    while True:
+        id_input = input("Enter Students's ID: ").strip()
+        if not id_input:
+            print("ID cannot be empty")
+            continue
+
+        id = id_input
+        break
     
     for student in students_list:
         if student.id == id:
@@ -13,8 +20,15 @@ def student_exists(students_list):
     return None
 
 def student_exist(students_list):
-    id = input("Enter student's ID: ")
-    
+    while True:
+        id_input = input("Enter Students's ID: ").strip()
+        if not id_input:
+            print("ID cannot be empty")
+            continue
+
+        id = id_input
+        break    
+
     for student in students_list:
         if student.id == id:
             return student, student.id
@@ -29,8 +43,30 @@ def add_a_student(students_list):
             
         
     else:
-        name = input("Enter Students's Name: ")
-        age = input("Enter Students's Age: ")
+        while True:
+            name = input("Enter Students's Name: ")
+            if not name:
+                print("Name cannot be empty.")
+            else:
+                break
+            
+        while True:
+            age_input = input("Enter Students's Age: ").strip()
+            if not age_input:
+                print("Age cannot be empty")
+                continue
+                
+            if not age_input.isdigit():
+                print("Enter a valid age.")
+                continue
+
+            age = int(age_input)
+            if (age<10) or (age>100):
+                print("Enter a valid age")
+                continue
+
+            break
+        
         while True:
             contact = input("Enter Students's Contact number (without dashes): ")
             if len(contact) == 11:
@@ -41,7 +77,6 @@ def add_a_student(students_list):
 
             else:
                 print("Enter correct Contact number. ")
-
 
 def display_all_students(students_list):
     print("\nTotal students are: ", len(students_list), "\n")
@@ -140,7 +175,7 @@ def main():
         print("I am error")
         
     while True:
-        try:
+        # try:
             print("----------Main Menu-------------")
             print("\nEnter 1 to add a Student.\nEnter 2 to display all Students.\nEnter 3 to search student by ID.\nEnter 4 to update student info. \nEnter 5 to delete a Student. \nEnter 6 to enroll a student in a Course.\nEnter 7 to remove a student from a Course. \nEnter 8 to Exit. \n")
             choice = int(input("Enter your choice: "))
@@ -174,7 +209,7 @@ def main():
             else: 
                 print("Not a valid option")
 
-        except:
-            print("Only integer number is served.")
+        # except:
+        #     print("Only integer number is served.")
 
 main()
