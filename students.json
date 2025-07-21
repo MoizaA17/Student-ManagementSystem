@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Moizah Kafayat",
+        "id": "802",
+        "age": 20,
+        "contact": "03045256783",
+        "courses": [
+            {
+                "course_name": "python",
+                "course_code": "145",
+                "instructor": "self",
+                "credit_hours": "4"
+            }
+        ]
+    }
+]
