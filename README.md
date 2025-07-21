@@ -61,7 +61,7 @@ This project helped me dive deep into **Object-Oriented Programming**, **file ha
 *Enrolling student in a course.*
 
 ### Saving all updaed  data and exiting the program
-![Demo: Saving updated students ](assets/saveeAndExit.png.png)
+![Demo: Saving updated students ](assets/saveeAndExit.png)
 *Saving modified/updated list of students into students.json*
 
 ---
