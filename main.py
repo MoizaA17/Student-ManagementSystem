@@ -140,41 +140,41 @@ def main():
         print("I am error")
         
     while True:
-    # try:
-        print("----------Main Menu-------------")
-        print("\nEnter 1 to add a Student.\nEnter 2 to display all Students.\nEnter 3 to search student by ID.\nEnter 4 to update student info. \nEnter 5 to delete a Student. \nEnter 6 to enroll a student in a Course.\nEnter 7 to remove a student from a Course. \nEnter 8 to Exit. \n")
-        choice = int(input("Enter your choice: "))
+        try:
+            print("----------Main Menu-------------")
+            print("\nEnter 1 to add a Student.\nEnter 2 to display all Students.\nEnter 3 to search student by ID.\nEnter 4 to update student info. \nEnter 5 to delete a Student. \nEnter 6 to enroll a student in a Course.\nEnter 7 to remove a student from a Course. \nEnter 8 to Exit. \n")
+            choice = int(input("Enter your choice: "))
 
-        if(choice == 1):
-            add_a_student(students_list)
+            if(choice == 1):
+                add_a_student(students_list)
 
-        elif(choice == 2):
-            display_all_students(students_list)
+            elif(choice == 2):
+                display_all_students(students_list)
 
-        elif(choice == 3):
-            Search_student_by_ID(students_list)
+            elif(choice == 3):
+                Search_student_by_ID(students_list)
 
-        elif(choice == 4):
-            update_info(students_list)
+            elif(choice == 4):
+                update_info(students_list)
 
-        elif(choice == 5):
-            delete_student(students_list)
+            elif(choice == 5):
+                delete_student(students_list)
 
-        elif(choice == 6):
-            enroll_in_a_course(students_list)
+            elif(choice == 6):
+                enroll_in_a_course(students_list)
 
-        elif(choice == 7):
-            remove_course(students_list)
+            elif(choice == 7):
+                remove_course(students_list)
 
 
-        elif(choice == 8):
-            save_students(filename, students_list)
-            break
+            elif(choice == 8):
+                save_students(filename, students_list)
+                break
 
-        else: 
-            print("Not a valid option")
+            else: 
+                print("Not a valid option")
 
-    # except:
-    #     print("Only integer number is served.")
+        except:
+            print("Only integer number is served.")
 
 main()
