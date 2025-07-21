@@ -116,7 +116,6 @@ def load_students(filename):
     if os.path.exists(filename):
         with open(filename, "r") as file:
             data =  json.load(file)
-            print("Data is loaded.")
             return data
         
     else:
